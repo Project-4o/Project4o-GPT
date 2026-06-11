@@ -1,67 +1,21 @@
-Project-4o License v1.0
+MIT License
 
 Copyright (c) 2026 sqersters and Project-4o contributors
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Permission is granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to use,
-copy, modify, and distribute the Software, subject to the following
-conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. ATTRIBUTION
-
-   Any fork, derivative work, or redistribution of the Software — in whole
-   or in part — must include clear and visible credit to the original
-   project:
-
-     Project-4o — https://github.com/Project-4o/project-4o
-
-   This credit must appear in the project's README, documentation, or
-   equivalent visible location. Simply including this license file is not
-   sufficient.
-
-2. PERSONAL, EDUCATIONAL, AND RESEARCH USE
-
-   The Software may be freely used for personal projects, academic research,
-   education, and non-commercial purposes without restriction beyond the
-   attribution requirement above.
-
-3. COMMERCIAL USE
-
-   Small-scale commercial use is permitted. This includes individual
-   developers, small teams, and startups using the Software as part of a
-   product or service, provided that:
-
-   - Attribution is maintained as described in section 1.
-   - The Software itself is not sold as a standalone product.
-
-   Large-scale commercial use — including but not limited to use by
-   companies with more than 50 employees, integration into products with
-   more than 100,000 users, or use generating more than $1,000,000 USD in
-   annual revenue — requires prior written permission from the copyright
-   holder.
-
-   To request commercial permission, contact the project maintainers
-   through the project's GitHub repository.
-
-4. NO SUBLICENSING UNDER DIFFERENT TERMS
-
-   You may not sublicense the Software under terms that are less restrictive
-   than this license. Any redistribution must include this license or a
-   compatible one that preserves these conditions.
-
-5. NO WARRANTY
-
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
-   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-   CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-   TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
-   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----
-
-For questions about this license, open an issue at:
-https://github.com/Project-4o/project-4o
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

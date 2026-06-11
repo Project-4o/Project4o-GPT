@@ -4,7 +4,7 @@ An open-source project to build a 4o-like AI, focused on personality, not parame
 
 **Website:** [github.com/Project-4o/project-4o](https://github.com/Project-4o/project-4o)
 **Community:** [r/project4o](https://www.reddit.com/r/project4o/)
-**License:** [Project-4o License](LICENSE)
+**License:** MIT
 
 ---
 
@@ -31,17 +31,15 @@ This isn't about building the biggest model. It's about building the best *exper
 
 ## Contributing
 
-This is a community project. Everyone's welcome:
+This is a community project. Everyone's welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-- **Developers** - model training, tooling, infrastructure
-- **Writers** - training data, conversation examples, personality design
-- **Testers** - try the models, report what works and what doesn't
-- **Ideas** - if you have thoughts on what makes an AI feel natural, share them
+- **Developers** — model training, tooling, infrastructure
+- **Writers** — training data, conversation examples, personality design
+- **Testers** — try the models, report what works and what doesn't
+- **Ideas** — if you have thoughts on what makes an AI feel natural, share them
 
 Check the [issues](https://github.com/Project-4o/project-4o/issues) or join the conversation on [Reddit](https://www.reddit.com/r/project4o/).
 
 ## License
 
-Project-4o is released under the [Project-4o License](LICENSE).
-
-Short version: free for personal and research use, attribution required for forks, limited commercial use. See the full license for details.
+Project-4o is released under the [MIT License](LICENSE).
