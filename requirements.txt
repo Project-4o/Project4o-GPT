@@ -1,0 +1,31 @@
+# PyTorch with ROCm support (AMD GPU on Windows)
+# Option A: AMD official wheels (recommended for Windows ROCm 7.2+):
+#   pip install torch torchvision --index-url https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/
+# Option B: TheRock nightly builds (latest):
+#   pip install torch torchvision --index-url https://rocm.nightlies.amd.com/v2/<your-gfx-arch>/
+# Option C: PyTorch ROCm (Linux):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.2
+torch>=2.5.0
+torchvision>=0.20.0
+
+# bitsandbytes with ROCm on Windows (v0.50.0+ supports Windows ROCm)
+# Prebuilt wheels: pip install bitsandbytes (PyPI, ROCm 7.2/7.14 Windows wheels included)
+# Or from GitHub continuous release:
+#   pip install --force-reinstall --no-deps https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl
+bitsandbytes>=0.50.0
+
+# Transformers & fine-tuning
+transformers>=4.46.0
+trl>=0.12.0
+peft>=0.14.0
+accelerate>=1.1.0
+
+# Data handling
+datasets>=3.0.0
+pyyaml>=6.0
+
+# Logging
+tensorboard>=2.18.0
+
+# GGUF conversion (optional, for export)
+gguf>=0.6.0

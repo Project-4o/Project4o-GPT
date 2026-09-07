@@ -1,0 +1,48 @@
+# Data (local only)
+data/
+
+# Training outputs
+checkpoints/
+outputs/
+lora_output/
+merged_model/
+gguf_output/
+*.gguf
+*.bin
+*.safetensors
+
+# Adapter checkpoints (keep config, ignore weights)
+*/checkpoint-*/
+**/adapter_model.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+mlruns/
+
+# HuggingFace cache
+.cache/

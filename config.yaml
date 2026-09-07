@@ -1,0 +1,65 @@
+# Project-4o Fine-tuning Configuration
+# Base model: openbmb/MiniCPM5-1B-SFT (1B params, LlamaForCausalLM)
+# Target: 16GB VRAM AMD ROCm GPU, QLoRA
+
+model:
+  base_model: "openbmb/MiniCPM5-1B-SFT"
+  model_dtype: "bfloat16"  # bf16 for training
+
+# QLoRA quantization config
+quantization:
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: "bfloat16"
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+
+# LoRA configuration
+lora:
+  r: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+# Training arguments
+training:
+  output_dir: "./checkpoints"
+  num_train_epochs: 3
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  max_seq_length: 2048
+  logging_steps: 10
+  save_steps: 200
+  save_total_limit: 3
+  bf16: true
+  gradient_checkpointing: true
+  optim: "paged_adamw_8bit"
+  seed: 42
+  report_to: "tensorboard"
+
+# Data configuration
+data:
+  train_file: "data/train.jsonl"
+  eval_file: "data/eval.jsonl"
+  eval_split: 0.05  # if no eval_file, split from train
+  min_samples: 100
+
+# Merging
+merge:
+  output_dir: "./merged_model"
+
+# GGUF conversion
+gguf:
+  output_dir: "./gguf_output"
+  quantize: "q4_k_m"  # options: q4_k_m, q5_k_m, q8_0, f16
