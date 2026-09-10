@@ -32,6 +32,11 @@ def main():
     adapter_path = args.adapter or os.path.join(cfg["training"]["output_dir"], "final_adapter")
     output_dir = cfg["merge"]["output_dir"]
 
+    if not base_model_name:
+        print("ERROR: model.base_model is not set in config.yaml")
+        print("Set it once the community chooses a model (see RFC-003 / r/project4o megathread)")
+        return
+
     if not os.path.exists(adapter_path):
         print(f"ERROR: Adapter not found at {adapter_path}")
         print("Run train.py first, or specify --adapter <path>")

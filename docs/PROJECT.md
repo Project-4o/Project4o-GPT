@@ -7,9 +7,8 @@ Project-4o is an open-source project to build a 4o-like AI, focused on personali
 ## Current Architecture (finetuning branch)
 
 ### Base Model
-- **openbmb/MiniCPM5-1B-SFT** — 1B parameter dense model, SFT checkpoint
-- Standard `LlamaForCausalLM` architecture, 131K context
-- Chosen for: small size (fits 16GB VRAM), SFT stage (clean slate for personality), MIT license
+- **TBD** — open call for candidates in the [r/project4o megathread](https://www.reddit.com/r/project4o/comments/1wcteap/megathread_which_model/); @bouclem recommends <5B params (mobile target)
+- Set `model.base_model` in `config.yaml` once chosen — the pipeline is model-agnostic
 
 ### Fine-tuning Method
 - **QLoRA** (4-bit NF4 quantization + LoRA adapters)

@@ -1,6 +1,6 @@
 """
 Project-4o Fine-tuning Script
-QLoRA training for openbmb/MiniCPM5-1B-SFT on 16GB AMD ROCm GPU.
+QLoRA training on a 16GB AMD ROCm GPU. Set the base model in config.yaml.
 
 Usage:
     python train.py --config config.yaml
@@ -104,6 +104,11 @@ def main():
     quant_cfg = cfg["quantization"]
     lora_cfg = cfg["lora"]
     train_cfg = cfg["training"]
+
+    if not model_cfg.get("base_model"):
+        print("ERROR: model.base_model is not set in config.yaml")
+        print("Set it once the community chooses a model (see RFC-003 / r/project4o megathread)")
+        return
 
     print("=" * 60)
     print("Project-4o Fine-tuning")

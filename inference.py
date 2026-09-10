@@ -36,6 +36,11 @@ def main():
         from peft import PeftModel
 
         base_model = cfg["model"]["base_model"]
+        if not base_model:
+            print("ERROR: model.base_model is not set in config.yaml")
+            print("Set it once the community chooses a model (see RFC-003 / r/project4o megathread)")
+            return
+
         adapter_path = os.path.join(cfg["training"]["output_dir"], "final_adapter")
 
         bnb_config = BitsAndBytesConfig(

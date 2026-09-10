@@ -24,8 +24,9 @@ This isn't about building the biggest model. It's about building the best *exper
 
 ## Approach
 
-- Start with small models (3B to 7B range)
-- Fine-tune using LoRA adapters
+- Start small — under 5B params so the model can run on mobile
+- Fine-tune using QLoRA adapters (pipeline on the `finetuning` branch)
+- Base model: **not chosen yet** — open call for candidates (custom architectures welcome) in the [r/project4o megathread](https://www.reddit.com/r/project4o/comments/1wcteap/megathread_which_model/)
 - Focus training on personality, tone, and interaction quality
 - Iterate fast, keep it lightweight
 

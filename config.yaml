@@ -1,9 +1,10 @@
 # Project-4o Fine-tuning Configuration
-# Base model: openbmb/MiniCPM5-1B-SFT (1B params, LlamaForCausalLM)
+# Base model: TBD — under community discussion
+# Vote/discuss: https://www.reddit.com/r/project4o/comments/1wcteap/megathread_which_model/
 # Target: 16GB VRAM AMD ROCm GPU, QLoRA
 
 model:
-  base_model: "openbmb/MiniCPM5-1B-SFT"
+  base_model: null  # set to the chosen HF model id, e.g. "org/model-name"
   model_dtype: "bfloat16"  # bf16 for training
 
 # QLoRA quantization config
